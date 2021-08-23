@@ -1,5 +1,3 @@
-# Python3 program to check if there is exist a path between
-# two vertices of an undirected graph.
 from collections import defaultdict
 from operator import itemgetter
 
@@ -22,6 +20,7 @@ class Graph:
             # If current vertex is same as destination, then print
             # current path[]
             if u == d:
+            # Map numbers to alphabets to reflect real node names
                 pathslib.append([chr(65+number) for number in path])
                 print ([chr(65+number) for number in path])
             else:
